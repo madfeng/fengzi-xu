@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:"Microsoft Yahei" ;
+    color: #787978;
+}
+html,body{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.flat-right{
+    float:right;
+}
+.flat-left{
+    float:left;
+}
+.container{
+    max-width: 1200px !important;
+    overflow: hidden;
+}
+.nav-bar{
+    width:100%;
+    background: #2c3e50;
+    position:fixed;
+    height:70px;
+    top: 0;
+    z-index: 999;
+}
+.current{
+    color: #E87E04;
+}
+.nav-ul li{
+    float: left;
+    line-height: 70px;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    color:#fff;
+}
+.nav-ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+.nav-ul li a:hover, .nav-ul li a.current{
+    color: #E87E04;
+}
+.nav-xs-ul{
+    position: absolute;
+    top: 70px;
+    left:0;
+    width:100%;
+    padding-bottom: 1em;
+    background: #2c3e50;
+    display: none;
+}
+.nav-xs-ul li{
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    font-size: 14px;
+    background: #2c3e50;
+    cursor: pointer;
+    text-align: center;
+}
+.nav-xs-ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+.nav-xs-ul li:first-child{
+    border-top: 1px solid #555;
+}
+.my-container{
+    width:100%;
+    margin:0;
+    background: #f2dede;
+}
+.more-nav{
+    display: none;
+}
+.top{
+    width: 45px;
+    height: 45px;
+    background: #cccccc;
+    border-radius: 5px;
+    position: fixed;
+    right: 20px;
+    bottom: 10%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 45px;
+    display: none;
+    z-index: 1000;
+    opacity: 0.6;
+}
+.top:hover{
+    opacity: 1;
+}
+.section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-bottom: 20px;
+    min-height: 700px;
+    padding-top:70px;
+}
+#about{
+    background: #f1b0b7;
+}
+.myPho{
+    width:400px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.myIntro{
+    width: 50%;
+    margin:0 auto;
+    font-size:1.5rem;
+    padding-top:10px;
+}
+
+#intension{
+    background: #b3d4fc;
+}
+#technique{
+    background: #46b8da;
+}
+#experience{
+    background: #d0e9c6;
+}
+#contact{
+    background: #948c76;
+}
+.title{
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #2c3e50;
+    padding-top:50px;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width:1024px){
+    .nav-xs-ul {
+        display: none;
+    }
+    .myPho{
+        width:300px;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 50%;
+        height: auto;
+    }
+    .myIntro{
+        width: 80%;
+        margin:0 auto;
+        font-size:1.2rem;
+    }
+    .title{
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        color: #2c3e50;
+        padding-top:50px;
+        letter-spacing: 3px;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .nav-ul{
+        display: none;
+    }
+    .more-nav{
+        display: block;
+    }
+    .myPho{
+        width:200px;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 50%;
+        height: auto;
+    }
+    .myIntro{
+        width: 80%;
+        margin:0 auto;
+        font-size:1.2rem;
+    }
+    .title{
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        color: #2c3e50;
+        padding-top:50px;
+        letter-spacing: 3px;
+        padding-bottom: 20px;
+    }
+}
+@media only screen and (max-width:415px) {
+
+}
+
+@media only screen and (max-width:320px) {
+    .myPho{
+        width:150px;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 50%;
+        height: auto;
+    }
+    .myIntro{
+        width: 80%;
+        margin:0 auto;
+        font-size:1rem;
+    }
+    .title{
+        text-align: center;
+        font-size: 1.5rem;
+        line-height:1.5rem;
+        color: #2c3e50;
+        padding-top:40px;
+        letter-spacing: 3px;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
